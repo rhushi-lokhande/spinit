@@ -1,0 +1,10 @@
+<!--<gallery [flexBorderSize]="3" [flexImageSize]="7" (viewerChange)="yourNotificationFunction($event)">
+</gallery>-->
+<spinit-list [items]="list|testPipe:'a'">
+    <template let-newVar>{{newVar.text}}</template>
+</spinit-list>
+<hr>
+<spinit-list [items]="list|testPipe:'a'">
+    <template let-newVar><input [(ngModel)]="newVar.text" >
+    </template>
+</spinit-list>
