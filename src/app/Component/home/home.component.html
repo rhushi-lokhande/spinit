@@ -1,6 +1,6 @@
 <!--<gallery [flexBorderSize]="3" [flexImageSize]="7" (viewerChange)="yourNotificationFunction($event)">
 </gallery>-->
-<spinit-list [items]="list|testPipe:'a'">
+<!--<spinit-list [items]="list|testPipe:'a'">
     <template let-newVar>{{newVar.text}}</template>
 </spinit-list>
 <hr>
@@ -8,3 +8,8 @@
     <template let-newVar><input [(ngModel)]="newVar.text" >
     </template>
 </spinit-list>
+
+<p-toggleButton [(ngModel)]="checked"></p-toggleButton>-->
+
+<ng-content></ng-content>
+<!--<template [expTemplateLoader]="templateRef"></template>-->

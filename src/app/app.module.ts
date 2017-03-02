@@ -9,22 +9,29 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { ListComponent } from './Component/list/list.component';
 import { TemplateLoderDirective } from './Component/template-loder.directive';
 import { TestPipePipe } from './Component/test-pipe.pipe';
+import { ToggleButtonModule } from 'primeng/primeng';
+import { SharedModule } from './Component/shared/shareModule'
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ListComponent,
-    ListComponent,
-    TemplateLoderDirective,
-    TestPipePipe
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    Angular2ImageGalleryModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        ListComponent,
+        ListComponent,
+        TemplateLoderDirective,
+        TestPipePipe
+
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        Angular2ImageGalleryModule,
+        ToggleButtonModule,
+        SharedModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

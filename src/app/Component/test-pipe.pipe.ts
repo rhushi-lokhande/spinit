@@ -11,5 +11,4 @@ export class TestPipePipe implements PipeTransform {
       return item.type === args;
     });
   }
-
 }
