@@ -51,5 +51,8 @@ export class HomeComponent implements OnInit, AfterContentInit {
 }
 
 function addTwoNo(a, b) {
+  if(!a){
+      return;
+  }
   return a + b;
 }
