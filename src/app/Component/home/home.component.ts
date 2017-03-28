@@ -50,7 +50,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
   }
 }
 
-
-
-
-// test commit
+function addTwoNo(a, b) {
+  return a + b;
+}
