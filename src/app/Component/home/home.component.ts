@@ -54,5 +54,8 @@ function addTwoNo(a, b) {
   if (!b) {
     return;
   }
+  if(!a){
+      return;
+  }
   return a + b;
 }
